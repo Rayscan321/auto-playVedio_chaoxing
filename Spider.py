@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-Phone = '13886748038'
-Password = 'Leihanning123'
+Phone = 'your phonNum'
+Password = 'your passWord'
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 5, 1)
 
