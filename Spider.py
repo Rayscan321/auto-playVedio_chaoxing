@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-Phone = 'your phonNum'
-Password = 'your passWord'
+Phone = '13886748038'
+Password = 'Leihanning123'
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 5, 1)
 
@@ -53,7 +53,7 @@ for course in driver.find_elements(By.CSS_SELECTOR, '[class="course-name overHid
     #观看每小节课程
     for index in range(0, len(driver.find_elements(By.CSS_SELECTOR, '.posCatalog_name'))):
         sub_class = driver.find_elements(By.CSS_SELECTOR, '.posCatalog_name')[index]
-        if sub_class.get_attribute('title') == '本章测验':
+        if sub_class.get_attribute('title') == '本章测验' or '阅读' or '问卷调查':
             continue
         wait.until(EC.element_to_be_clickable(sub_class))
         sub_class.click()
