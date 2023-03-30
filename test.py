@@ -76,5 +76,5 @@ def watch_vedio(driver: webdriver.Chrome, wait: WebDriverWait):
         driver.switch_to.window(original_window)
 
 if __name__ == '__main__':
-    driver, wait = login('13886748038', 'Leihanning123')
+    driver, wait = login('Your phone number', 'Your password')
     watch_vedio(driver, wait)
